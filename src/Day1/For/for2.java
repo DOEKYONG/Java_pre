@@ -1,4 +1,4 @@
-package Day1;
+package Day1.For;
 
 import java.nio.charset.StandardCharsets;
 import java.util.*;

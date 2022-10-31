@@ -1,4 +1,4 @@
-package Day1;
+package Day1.For.Star;
 
 import java.util.Scanner;
 public class star6 {
