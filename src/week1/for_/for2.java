@@ -1,6 +1,5 @@
-package Day1.For;
+package week1.for_;
 
-import java.nio.charset.StandardCharsets;
 import java.util.*;
 public class for2 {
     public static void main(String[] args) {

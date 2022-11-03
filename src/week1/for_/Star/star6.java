@@ -1,4 +1,4 @@
-package Day1.For.Star;
+package week1.for_.Star;
 
 import java.util.Scanner;
 public class star6 {

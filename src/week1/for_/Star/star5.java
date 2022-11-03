@@ -1,16 +1,16 @@
-package Day1.For.Star;
+package week1.for_.Star;
 
 import java.util.Scanner;
 
-public class star4 {
+public class star5 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int no = in.nextInt();
-        for(int i =0 ; i<no; i++){
-            for(int k = no; k>no-i; k-- ) {
+        for(int i =1; i<=no; i++) {
+            for(int j = 1; j<=no-i; j++) {
                 System.out.print(" ");
             }
-            for(int j= no ; j>i; j--) {
+            for(int k = 1; k<=i*2-1; k++) {
                 System.out.print("*");
             }
             System.out.println();

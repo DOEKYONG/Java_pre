@@ -1,4 +1,4 @@
-package Day1.IF;
+package week1.if_;
 
 import java.util.Scanner;
 public class if4 {
