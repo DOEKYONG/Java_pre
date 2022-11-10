@@ -10,12 +10,11 @@ public class Maze  {
         this.y = y;
     }
 
-    // 스택 값 로그 확인용 => 없어도 작동함
-//    @Override
-//    public String toString() {
-//        return "Maze{" +
-//                "x=" + x +
-//                ", y=" + y +
-//                '}';
-//    }
+    @Override
+    public String toString() {
+        return "Maze{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
+    }
 }

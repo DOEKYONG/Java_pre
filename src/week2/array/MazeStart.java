@@ -2,7 +2,6 @@ package week2.array;
 
 public class MazeStart  {
     public static void main(String[] args) {
-
     MazeController mazeController = new MazeController();
     mazeController.dfs(0,0);
 

@@ -14,7 +14,7 @@ public class MazeController  {
             {1, 1, 1, 1, 1, 1, 1, 0}
     };
     Stack<Maze> stack = new Stack<>();
-    public void dfs(int x, int y) {
+    public void dfs(int x, int y) { // x 가 세로, y 가 가로
         Maze now = new Maze(x,y);
         if(x==0 && y==0){
             myMaze[x][y] = 1;
@@ -50,9 +50,9 @@ public class MazeController  {
                 myMaze[now.x][now.y + 1] = 1;
             }
         }
-        //System.out.println(stack.peek()); // 스택동작원리 이해 
+        System.out.println("집은스택 : "+stack.peek()); // 스택동작원리 이해
         Maze temp = stack.pop();
-        //System.out.println(stack); // 스택동작원리 이해
+        System.out.println(stack); // 스택동작원리 이해
         if(stack.isEmpty()) {
             System.out.println("(" + temp.x + "," + temp.y + ")");
         }
