@@ -4,13 +4,13 @@ import java.util.Random;
 
 public class Car {
 //    private static int num = 1000;
-    private int carnum;
+    private int carNum;
 
-    public Car(int carnum) {
-        this.carnum = carnum;
+    public Car(int carNum) {
+        this.carNum = carNum;
     }
 
     public int showCarNumber() {
-        return carnum;
+        return carNum;
     }
 }

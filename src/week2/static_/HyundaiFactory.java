@@ -2,7 +2,7 @@ package week2.static_;
 
 public class HyundaiFactory {
 
-    int num = 1000;
+     private int num = 1000;
     private static HyundaiFactory instance = new HyundaiFactory();
     private HyundaiFactory() {}
     public static HyundaiFactory getFactory(){
