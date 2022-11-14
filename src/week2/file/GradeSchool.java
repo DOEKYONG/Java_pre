@@ -6,10 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class GradeSchool {
-
     private static GradeSchool instance = new GradeSchool();
     private GradeSchool(){}
-
 
     public  static GradeSchool getSchool(){
         if(instance == null) {

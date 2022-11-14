@@ -9,7 +9,7 @@ public class GradeStart {
         GradeSchool gradeSchool = GradeSchool.getSchool();
         while (true) {
             Scanner scanner = new Scanner(System.in);
-            System.out.println("1.조회 2.전체조회 3.추가 4.수정 ");
+            System.out.println("1.조회 2.전체조회 3.추가 4.수정 5.종료 ");
             int menu = scanner.nextInt();
             if(menu ==1 ) {
                 System.out.println("학번을 입력하세요 :");

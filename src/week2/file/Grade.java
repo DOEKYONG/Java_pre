@@ -15,7 +15,6 @@ public class Grade {
     private ArrayList<Grade> grades ;
 
     private Grade(){}
-
     public Grade(int number) {
         this.number = number;
     }
@@ -25,10 +24,6 @@ public class Grade {
         this.major = major;
         this.subject = subject;
     }
-
-//    public int getNumber() {
-//        return number;
-//    }
 
     public Grade(ArrayList<Grade> grades) {
         this.grades = grades;
@@ -118,7 +113,7 @@ public class Grade {
             for(Grade temp : grades){
                int korean =-1;
                 int math = -1;
-                int english =-1;
+                int english = -1;
                 if(temp.subject.get(0).containsKey("국어")){
                      korean = (int)temp.subject.get(0).get("국어");
                 }
