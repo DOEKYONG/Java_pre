@@ -5,5 +5,4 @@ public class GradeRED extends Grade {
         super(inName,price, inHour);
     }
 
-
 }

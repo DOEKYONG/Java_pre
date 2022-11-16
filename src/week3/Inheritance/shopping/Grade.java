@@ -16,13 +16,14 @@ package week3.Inheritance.shopping;
         int salePrice = (int)(payment*saleRatio);
         return salePrice;
     }
-    public void counselor () {
-        System.out.println("상담원 호출");
+    public String counselor () {
+        return "상담원";
     }
     public  int getPayment(){
         int fintalPayment = payment-salePoint();
         return fintalPayment;
     }
+    @Override
     public void print() {
         String message = name + "님의 지불 금액은 " +getPayment() + "이고 적립포인트는"
                 + bonusPayment()+"점입니다.\n"+"주차요금은 " +calParkingPayment()+"원 입니다.";

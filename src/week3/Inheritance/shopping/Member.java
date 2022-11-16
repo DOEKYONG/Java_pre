@@ -2,7 +2,7 @@ package week3.Inheritance.shopping;
 
 import week2.file.Grade;
 
-public  abstract class Member  {
+public abstract  class Member  {
     protected String name; // 회원이름
     protected String grade; // 회원등급
     protected double bonusRatio; // 적립
@@ -21,6 +21,10 @@ public  abstract class Member  {
         payment = price;
         hour = inHour;
     }
+
+    public Member() {}
+    //public void print() {}
+
       public abstract void print();
 
 }
