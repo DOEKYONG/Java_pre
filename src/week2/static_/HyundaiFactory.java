@@ -1,7 +1,6 @@
 package week2.static_;
 
 public class HyundaiFactory {
-
      private int num = 1000;
     private static HyundaiFactory instance = new HyundaiFactory();
     private HyundaiFactory() {}
