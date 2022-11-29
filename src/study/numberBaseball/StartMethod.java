@@ -13,22 +13,23 @@ public class StartMethod {
 
     public boolean game(List computerlist) {
         RandomNumber randomNumber = new RandomNumber();
-        List<Integer> inputNumber = randomNumber.userNumberList(randomNumber.userNumber());
+        List<Integer> inputNumber = randomNumber.userNumberList(randomNumber.scanner());
+        int strike = strike(computerlist,inputNumber);
         run( computerlist, inputNumber);
-        return true;
+        return gameover(strike);
     }
     public boolean gameover(int strike) {
         if(strike == 3 ) {
             System.out.println("게임 종료");
+            return false;
         }
-        return false;
+        return true;
     }
 
     public  void run(List computerlist,List inputNumber){
         int strike = strike(computerlist,inputNumber);
         int ball = calBall(computerlist,inputNumber);
         printCount(strike,ball);
-        gameover(strike);
     }
 
     public  int strike(List computerlist,List inputNumber) {
@@ -65,8 +66,10 @@ public class StartMethod {
             System.out.println(strike+"스트라이크 " + ball+"볼");
         } else if (strike!=0 && ball ==0 ) {
             System.out.println(strike+"스트라이크");
-        }else{
+        }else if(strike == 0 && ball != 0 ){
             System.out.println(ball+"볼");
+        } else {
+            System.out.println("낫싱");
         }
     }
 

@@ -23,12 +23,15 @@ public class RandomNumber {
         return (int) (Math.random() * (max - min + 1)) + min;
     }
 
-    String userNumber(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("숫자를 입력해주세요 : ");
-        String number = scanner.next();
-        return number;
-    }
+//    String userNumber(){
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("숫자를 입력해주세요 : ");
+//        String number = scanner.next();
+//        if(error(number)==false) {
+//            number = scanner();
+//        }
+//        return number;
+//    }
     List userNumberList(String number) {
         List<Integer> list = new LinkedList<>();
         for (int i = 0; i<number.length(); i++) {
@@ -38,4 +41,25 @@ public class RandomNumber {
         return list;
     }
 
+    public boolean error(int number){
+        int numberLength = (int)( Math.log10(number)+1 );
+        if(numberLength!=3){
+            System.out.println("세자리 숫자를 입력하세요!!");
+            return false;
+        }
+        return true;
+    }
+
+    public String  scanner(){
+        try{
+            System.out.println("숫자를 입력해주세요 : ");
+            Scanner scanner = new Scanner(System.in);
+            int number = scanner.nextInt();
+            if(error(number)){
+                return Integer.toString(number);
+            }
+        }catch (InputMismatchException e) {}
+        return scanner();
+    }
+    
 }
